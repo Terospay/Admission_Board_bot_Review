@@ -156,8 +156,10 @@ def callback_worker(call):
               'собеседовании: '
         ans_time = time[0:10]
         ans += ans_time + ' в ' + time[11:16] + '\nПри себе ' \
-            'необходимо иметь ' \
-            'документы указанные на сайте приемной комиссии: https://pk.mipt.ru'
+                                                'необходимо иметь ' \
+                                                'документы указанные на ' \
+                                                'сайте приемной комиссии: ' \
+                                                'https://pk.mipt.ru'
         bot.send_message(call.message.chat.id, ans)
     else:
         bot.send_message(call.message.chat.id, 'Введите ваше ФИО:')
