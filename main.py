@@ -31,7 +31,8 @@ def get_FIO(message):
     FIO = message.text
     FIO = FIO.split(' ')
     if (len(FIO) < 2):
-        bot.send_message(message.from_user.id, "Некоректный ввод\nВведите ваше "
+        bot.send_message(message.from_user.id, "Некоректный ввод\n"
+                                               "Введите ваше "
                                                "ФИО:")
         bot.register_next_step_handler(message, get_FIO)
     else:
